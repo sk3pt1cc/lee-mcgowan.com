@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
-const darkblue = '#307eff';
-const lightblue = '#5997ff';
-
 const HeaderWrapper = styled.div`
-  background-color: ${darkblue};
+  background-color: dimgrey;
   padding: 5px 10px;
-  color: white;
+  color: lightgrey;
+  font-weight: bolder;
+  font-size: 0.6rem;
 `
 
 export default HeaderWrapper;
