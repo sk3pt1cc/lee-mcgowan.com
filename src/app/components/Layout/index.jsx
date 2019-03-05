@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from './Header';
+import LayoutWrapper from './LayoutWrapper';
 
 const Layout = ({ children }) => (
-  <div className="layout">
+  <LayoutWrapper>
     <Header title="leemcgowan.com" />
     {children}
-  </div>
+  </LayoutWrapper>
 );
 
 export default Layout;
