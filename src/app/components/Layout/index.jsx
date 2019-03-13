@@ -1,11 +1,16 @@
 import React from 'react';
-import Header from './Header';
+import Container from '../styled/container';
 import LayoutWrapper from './LayoutWrapper';
+import Header from '../header';
+import Socials from '../socials';
 
 const Layout = ({ children }) => (
   <LayoutWrapper>
-    <Header title="leemcgowan.com" />
-    {children}
+    <Header />
+    <Socials />
+    <Container>
+      {children}
+    </Container>
   </LayoutWrapper>
 );
 

@@ -1,14 +1,16 @@
-import React from 'react';
-import HomeWrapper from './HomeWrapper';
-import AboutMePreview from '../../components/AboutMePreview';
-import BigBanner from '../../components/BigBanner';
-import ContactMe from '../../components/ContactMe';
+import React from "react";
+import HomeWrapper from "./HomeWrapper";
+import AboutMe from "../../components/about-me";
+import Container from "../../components/styled/container";
 
 const Home = () => (
   <HomeWrapper>
-    <BigBanner />
-    <AboutMePreview />
-    <ContactMe />
+    <section />
+    <section>
+      <Container>
+        <AboutMe />
+      </Container>
+    </section>
   </HomeWrapper>
 );
 
