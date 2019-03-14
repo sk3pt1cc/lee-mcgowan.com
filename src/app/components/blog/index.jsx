@@ -25,7 +25,7 @@ const Blog = () => {
   useEffect(() => {
     if (posts.length <= 0) {
       sheetrock({
-        url: process.env.SHEET_URL,
+        url: "https://docs.google.com/spreadsheets/d/1LvEMfH1CGgj3UaedMRrQbDUCOdFmOkUmXLSbrpsaSrg/edit#gid=0",
         callback: (err, opt, response) => {
           const res = response;
           const posts = parseSheetsContent(res);
