@@ -3,17 +3,15 @@ import PostWrapper from "./PostWrapper";
 import TextPanel from "../../styled/text-panel";
 import Button from "../../styled/ button";
 
-const truncate = text => text.length < 300 ? text : `${text.substring(0, 297)}...`;
-
-const Post = ({ title, content }) => (
+const Post = ({ title, preview, readMore }) => (
   <PostWrapper>
     <TextPanel>
       <h3>{title}</h3>
       <hr />
       <p>
-        {truncate(content)}
+        {preview}
       </p>
-      <Button>
+      <Button onClick={readMore}>
         Read More
       </Button>
     </TextPanel>
