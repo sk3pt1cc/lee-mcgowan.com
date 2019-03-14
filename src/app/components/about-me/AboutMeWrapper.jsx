@@ -11,7 +11,6 @@ const AboutMeWrapper = styled.div`
       padding: 16px;
       img {
         max-width: 100%;
-        border: 1px solid black;
       }
     }
   }
