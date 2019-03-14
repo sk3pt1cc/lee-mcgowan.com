@@ -2,6 +2,7 @@ import React from "react";
 import Container from "../styled/container";
 import AboutMeWrapper from "./AboutMeWrapper";
 import TextPanel from "../styled/text-panel";
+import Socials from "../socials";
 
 const AboutMe = () => (
   <AboutMeWrapper>
