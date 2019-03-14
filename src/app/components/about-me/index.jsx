@@ -9,11 +9,19 @@ const AboutMe = () => (
     <TextPanel>
       <h3>About Me</h3>
       <hr />
-      <p>
-        I'm a software developer from Glasgow, UK who specialises in frontend
-        projects with ReactJS. I also love to write fiction and will probably be
-        posting some of that here, and maybe some personal ramblings too.
-      </p>
+      <div className="content">
+        <div>
+          <img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/20953509_1680676471974088_8669894212115247644_n.jpg?_nc_cat=105&_nc_ht=scontent-lht6-1.xx&oh=6cb97be8d83d08083c99174e57012a33&oe=5D1AC451" />
+          <p>
+            <small>That's me with the "stubble"</small>
+          </p>
+        </div>
+        <div>
+          I'm a software developer from Glasgow, UK who specialises in frontend
+          projects with ReactJS. I also love to write fiction and will probably
+          be posting some of that here, and maybe some personal ramblings too.
+        </div>
+      </div>
     </TextPanel>
   </AboutMeWrapper>
 );

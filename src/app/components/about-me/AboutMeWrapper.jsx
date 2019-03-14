@@ -2,8 +2,19 @@ import styled from 'styled-components';
 
 const AboutMeWrapper = styled.div`
   background-color: white;
-  // text-align: center;
-  // border-top: 5px solid #203e6d;
+  .content {
+    display: flex;
+    @media only screen and (max-width: 500px) {
+      display: block;
+    }
+    div {
+      padding: 16px;
+      img {
+        max-width: 100%;
+        border: 1px solid black;
+      }
+    }
+  }
 `;
 
 export default AboutMeWrapper;
