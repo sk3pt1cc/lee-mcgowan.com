@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from 'axios';
 
 import HomeWrapper from "./HomeWrapper";
@@ -10,14 +10,14 @@ import PostDetail from "../../components/post-detail";
 const Home = () => {
   const [selectedPost, setSelectedPost] = useState(null);
   const [posts, setPosts] = useState([]);
-  const [initialRequestMade, setInitialRequestMade] = useState(false);
 
-  if (!initialRequestMade) {
+  // Empty array param means this will only run if the return value changes.
+  useEffect(() => {
     axios.get('/.netlify/functions/get-posts').then((data) => {
       setPosts(data);
-      setInitialRequestMade(true);
+      console.log(posts);
     })
-  }
+  }, [])
 
   return (
     !selectedPost ? (
