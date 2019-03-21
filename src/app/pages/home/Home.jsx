@@ -13,7 +13,7 @@ const Home = () => {
 
   useEffect(() => {
     axios.get('/.netlify/functions/get-posts').then((data) => {
-      setPosts(data);
+      setPosts(JSON.parse(data));
     })
   });
 
