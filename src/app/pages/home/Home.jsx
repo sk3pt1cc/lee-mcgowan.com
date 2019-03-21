@@ -13,7 +13,6 @@ const Home = () => {
 
   axios.get('/.netlify/functions/get-posts').then((data) => {
     setPosts(data);
-    setInitialRequestMade(true);
   })
 
   return (
