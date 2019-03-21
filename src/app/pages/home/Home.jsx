@@ -29,7 +29,7 @@ const Home = () => {
       </section>
       <section>
         <Container>
-          <Blog setSelectedPost={setSelectedPost} posts={posts} />
+          { posts ? <Blog setSelectedPost={setSelectedPost} posts={posts} /> : <p>There are no posts to show :(</p> }
         </Container>
       </section>
     </HomeWrapper>
