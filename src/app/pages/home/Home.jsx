@@ -12,8 +12,8 @@ const Home = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get('/.netlify/functions/test').then((data) => {
-      console.log(data);
+    axios.get('/.netlify/functions/get-posts').then((data) => {
+      setPosts(data);
     })
   });
 
