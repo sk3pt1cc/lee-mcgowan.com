@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack",
-    "dev": "webpack-dev-server --open"
+    "dev": "webpack-dev-server --open",
+    "lambda:serve": "netlify-lambda serve lambdas",
+    "lambda:build": "netlify-lambda serve lambdas"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +27,7 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
+    "netlify-lambda": "^1.4.3",
     "react": "^16.4.2",
     "react-dom": "^16.5.0",
     "react-redux": "^5.0.7",
