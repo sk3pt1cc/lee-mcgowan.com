@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import rp from 'request-promise';
+import axios from 'axios';
 
 import HomeWrapper from "./HomeWrapper";
 import AboutMe from "../../components/about-me";
@@ -12,10 +12,9 @@ const Home = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    rp('/.netlify/functions/test').then((data) => {
+    axios.get('/.netlify/functions/test').then((data) => {
       console.log(data);
-      console.log('hahahaha');
-    });
+    })
   });
 
   return (
