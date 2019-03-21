@@ -11,11 +11,10 @@ const Home = () => {
   const [selectedPost, setSelectedPost] = useState(null);
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
-    axios.get('/.netlify/functions/get-posts').then((data) => {
-      setPosts(data);
-    })
-  });
+  axios.get('/.netlify/functions/get-posts').then((data) => {
+    setPosts(data);
+    setInitialRequestMade(true);
+  })
 
   return (
     !selectedPost ? (
