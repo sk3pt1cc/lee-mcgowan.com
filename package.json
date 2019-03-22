@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack",
     "dev": "webpack-dev-server --open",
-    "lambda:serve": "netlify-lambda serve lambdas",
+    "lambda:serve": "export NODE_ENV=development && netlify-lambda serve lambdas",
     "lambda:build": "netlify-lambda serve lambdas"
   },
   "keywords": [],

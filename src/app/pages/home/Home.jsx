@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import axios from 'axios';
 
+import { get } from '../../services/http';
 import HomeWrapper from "./HomeWrapper";
 import AboutMe from "../../components/about-me";
 import Container from "../../components/styled/container";
@@ -13,9 +13,8 @@ const Home = () => {
 
   // Empty array param means this will only run if the return value changes.
   useEffect(() => {
-    axios.get('/.netlify/functions/get-posts').then((data) => {
-      setPosts(data);
-      console.log(posts);
+    get('get-posts').then((response) => {
+      setPosts(response.data);
     })
   }, [])
 

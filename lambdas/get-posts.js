@@ -1,3 +1,5 @@
+import { successResponse } from './services/response';
+
 exports.handler = (event, context, callback) => {
   const posts = [{
     title: 'A test title!',
@@ -5,8 +7,5 @@ exports.handler = (event, context, callback) => {
     preview: 'omg this works!',
   }];
 
-  callback(null, {
-    statusCode: 200,
-    body: JSON.stringify(posts),
-  });
+  successResponse(posts, callback);
 };
