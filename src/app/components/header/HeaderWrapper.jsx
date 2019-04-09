@@ -1,14 +1,21 @@
 import styled from 'styled-components';
 
+const blackBoxHeight = 80;
+const headlineHeight = 40;
+export const headerHeight = blackBoxHeight + headlineHeight;
+
 const HeaderWrapper = styled.div`
   width: 100%;
-  text-align: center;
-  display: flex;
-  h1 {
-    font-size: 2rem;
+  font-family: 'American Typewriter', 'Andale Mono';
+  .headline {
+    height: ${headlineHeight}px;
+    font-size: 0.5rem;
+    padding: 8px;
+    padding-left: 50px;
   }
-  hr {
-    color: #6400c1;
+  .black-box {
+    height: ${blackBoxHeight}px;
+    background-color: black;
   }
 `;
 

@@ -4,16 +4,10 @@ import Container from '../styled/container';
 
 const Header = () => (
   <HeaderWrapper>
-    <Container>
-      <hr />
-    </Container>
-    <Container>
-      <h1>Lee McGowan</h1>
-      <small>Programmer & Hobbyist Writer</small>
-    </Container>
-    <Container>
-      <hr />
-    </Container>
+    <div className="headline">
+      <h1>Lee McGowan | Programmer, Writer, Aspiring Stoic</h1>
+    </div>
+    <div className="black-box" />
   </HeaderWrapper>
 );
 

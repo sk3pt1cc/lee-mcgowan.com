@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "markdown-to-jsx": "^6.9.3",
     "react": "^16.4.2",
     "react-dom": "^16.5.0",
     "react-redux": "^5.0.7",

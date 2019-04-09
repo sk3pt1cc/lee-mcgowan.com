@@ -1,18 +1,15 @@
 import React from "react";
+import Markdown from 'markdown-to-jsx';
 import PostWrapper from "./PostWrapper";
-import TextPanel from "../../styled/text-panel";
-import Button from "../../styled/ button";
+import Container from "../../styled/container";
 
-const Post = ({ title, preview, readMore }) => (
+const Post = ({ title, content }) => (
   <PostWrapper>
-    <TextPanel>
-      <h1>{title}</h1>
-      <small>Created on 21/01/2012</small>
-      <p>{preview}</p>
-      <Button onClick={readMore}>
-        Read More
-      </Button>
-    </TextPanel>
+    <Container>
+      <Markdown>
+        {content}
+      </Markdown>
+    </Container>
   </PostWrapper>
 );
 
