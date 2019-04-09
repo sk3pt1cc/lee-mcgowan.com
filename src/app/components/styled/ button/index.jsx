@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const Button = styled.button`
-  background-color: #203e6d;
   padding: 8px 32px;
+  background-color: #6400c1;
   color: white;
   font-size: 0.6rem;
   &:hover {

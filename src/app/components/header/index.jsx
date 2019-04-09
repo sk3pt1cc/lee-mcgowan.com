@@ -5,7 +5,14 @@ import Container from '../styled/container';
 const Header = () => (
   <HeaderWrapper>
     <Container>
-      <h1>Lee McGowan | <small>Programmer & Hobbyist Writer</small></h1>
+      <hr />
+    </Container>
+    <Container>
+      <h1>Lee McGowan</h1>
+      <small>Programmer & Hobbyist Writer</small>
+    </Container>
+    <Container>
+      <hr />
     </Container>
   </HeaderWrapper>
 );

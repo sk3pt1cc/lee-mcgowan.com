@@ -6,11 +6,9 @@ import Button from "../../styled/ button";
 const Post = ({ title, preview, readMore }) => (
   <PostWrapper>
     <TextPanel>
-      <h3>{title}</h3>
-      <hr />
-      <p>
-        {preview}
-      </p>
+      <h1>{title}</h1>
+      <small>Created on 21/01/2012</small>
+      <p>{preview}</p>
       <Button onClick={readMore}>
         Read More
       </Button>
